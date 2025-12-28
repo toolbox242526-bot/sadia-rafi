@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sadia Rafi | Machine Learning Professional</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --dark: #021526;
+      --primary: #03346E;
+      --accent: #6EACDA;
+      --light: #E2E2B6;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--dark);
+      color: var(--light);
+      scroll-behavior: smooth;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(3, 52, 110, 0.95);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 60px;
+      z-index: 1000;
+    }
+
+    nav h1 {
+      color: var(--accent);
+      font-size: 22px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--light);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: var(--accent);
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+      background: linear-gradient(135deg, var(--dark), var(--primary));
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      color: var(--accent);
+    }
+
+    .hero p {
+      margin-top: 15px;
+      font-size: 20px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero button {
+      margin-top: 30px;
+      padding: 14px 40px;
+      border: none;
+      background: var(--accent);
+      color: var(--dark);
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .hero button:hover {
+      transform: scale(1.05);
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 100px 80px;
+      max-width: 1400px;
+      margin: auto;
+    }
+
+    section h3 {
+      font-size: 32px;
+      color: var(--accent);
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: var(--primary);
+      padding: 30px;
+      border-radius: 16px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+
+    .card h4 {
+      color: var(--accent);
+      margin-bottom: 15px;
+    }
+
+    /* TIMELINE */
+    .timeline {
+      border-left: 3px solid var(--accent);
+      padding-left: 30px;
+    }
+
+    .timeline div {
+      margin-bottom: 30px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--primary);
+      text-align: center;
+      padding: 40px;
+      margin-top: 80px;
+    }
+
+    footer p {
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 20px;
+      }
+      section {
+        padding: 80px 25px;
+      }
+      .hero h2 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h1>Sadia Rafi</h1>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#ml">Machine Learning</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div>
+    <h2>Machine Learning & Mathematics</h2>
+    <p>Professional academic portfolio of Sadia Rafi — blending mathematical foundations with modern machine learning technologies.</p>
+    <button onclick="document.getElementById('about').scrollIntoView()">Explore Profile</button>
+  </div>
+</section>
+
+<section id="about">
+  <h3>Professional Summary</h3>
+  <p>I am Sadia Rafi, a 7th semester Mathematics student at CASPAM, Bahauddin Zakariya University, Multan. My expertise lies in analytical reasoning, mathematical modeling, and emerging machine learning techniques. I aim to bridge theoretical mathematics with intelligent data-driven systems.</p>
+</section>
+
+<section id="skills">
+  <h3>Core Skills</h3>
+  <div class="grid">
+    <div class="card"><h4>Mathematics</h4><p>Linear Algebra, Probability, Statistics, Optimization</p></div>
+    <div class="card"><h4>Machine Learning</h4><p>Supervised & Unsupervised Learning, Model Evaluation</p></div>
+    <div class="card"><h4>Tools</h4><p>Python, NumPy, Pandas, Scikit-learn</p></div>
+    <div class="card"><h4>Data Analysis</h4><p>Data Cleaning, Visualization, Insights</p></div>
+  </div>
+</section>
+
+<section id="ml">
+  <h3>Machine Learning Exploration</h3>
+  <div class="grid">
+    <div class="card"><h4>Algorithms</h4><p>Regression, Classification, Clustering, Decision Trees</p></div>
+    <div class="card"><h4>Neural Networks</h4><p>Foundations of Deep Learning and Optimization</p></div>
+    <div class="card"><h4>Applications</h4><p>Healthcare, Finance, Prediction Systems</p></div>
+  </div>
+</section>
+
+<section id="education">
+  <h3>Education</h3>
+  <div class="timeline">
+    <div>
+      <h4>BS Mathematics (7th Semester)</h4>
+      <p>CASPAM – Bahauddin Zakariya University, Multan</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h3>Contact & Future Goals</h3>
+  <p>I aspire to work on advanced machine learning projects, research, and intelligent systems. This portfolio will continue to evolve with new projects and innovations.</p>
+</section>
+
+<footer>
+  <p>© 2025 Sadia Rafi | Professional Machine Learning Portfolio</p>
+</footer>
+
+</body>
+</html>
